@@ -1,4 +1,4 @@
-package com.example.arcv2;
+package com.arc.arcv2;
 
 import android.content.Context;
 
