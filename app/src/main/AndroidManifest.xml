@@ -12,12 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_register" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.Notched">
+        <activity android:name=".activity_register" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
 
         </activity>
         <activity
             android:name=".activity_login"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.Notched"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
         <activity
             android:name=".Splash"
             android:theme="@style/AppTheme.NoActionBar">
