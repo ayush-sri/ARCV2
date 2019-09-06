@@ -3,7 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="status_bar_color">#00BCD4</color>
+    <color name="status_bar_color">#89239B</color>
     <color name="progress_outer">@color/colorPrimary</color>
     <color name="progress_inner">@color/colorAccent</color>
+    <color name="facebookbg">#0B79CC</color>
 </resources>
