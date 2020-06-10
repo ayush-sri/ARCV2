@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/choose_dept"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true">
+<TextView
+    android:id="@+id/head"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Choose Department"
+    android:textSize="@dimen/_20ssp"
+    android:layout_margin="@dimen/_15sdp"
+    android:textStyle="bold"
+    android:textColor="#7A000000"
+    />
+    <TextView
+        android:id="@+id/add_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_toRightOf="@+id/head"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/_15ssp"
+        android:layout_margin="@dimen/_15sdp"
+        android:textColor="#1976D2"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dept_recycler"
+        android:layout_below="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutAnimation="@anim/layout_animation_fall_down"/>
+</RelativeLayout>

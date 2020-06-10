@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout_verif"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".verify">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/verify_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Verify"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textColor="#000" />
+        <TextView
+            android:id="@+id/otp_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:textColor="#8EDAFF"
+            android:text="Enter the OTP here"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+
+        <com.bigbangbutton.editcodeview.EditCodeView
+            android:id="@+id/verif"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:underlineFilledColor="@color/status_bar_color"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="156dp"
+            app:textSize="22sp"
+            app:codeLength="6" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

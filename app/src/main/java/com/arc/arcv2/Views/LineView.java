@@ -14,6 +14,8 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+import com.arc.arcv2.R;
+
 public class LineView extends View {
     private Path path;
     private Paint paint;
@@ -46,7 +48,7 @@ public class LineView extends View {
 
         path = new Path();
         path.moveTo(0,0);
-        path.lineTo(100,0);
+        path.lineTo(110,0);
 
         PathMeasure measure = new PathMeasure(path,false);
         length = measure.getLength();

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    &lt;!&ndash; solid background &ndash;&gt;
+    <solid android:color="#16999999"/>
+    &lt;!&ndash; draw a border around rectangle shape &ndash;&gt;
+
+    &lt;!&ndash; draw 35 dp radius for each corner &ndash;&gt;
+    <corners android:radius="35dp"/>
+</shape>-->
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#B5999999"/>
+        <corners android:radius="35dp"/>
+    </shape>
+    </item>
+
+</layer-list>

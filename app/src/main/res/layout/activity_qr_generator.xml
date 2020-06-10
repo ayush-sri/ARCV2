@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QR_generator">
+
+    <!--<EditText
+        android:id="@+id/code_qr"
+        android:hint="Enter code"
+        android:padding="@dimen/_9sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginLeft="@dimen/_45sdp"
+        android:layout_marginRight="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_45sdp"/>-->
+
+   <ImageView
+       android:id="@+id/qr_code"
+       android:layout_height="@dimen/_200sdp"
+       android:layout_width="@dimen/_200sdp"
+       android:layout_centerInParent="true"
+       />
+    <Button
+        android:layout_below="@id/qr_code"
+        android:background="@drawable/button_bg"
+        android:id="@+id/share_to_class"
+        android:layout_marginLeft="@dimen/_55sdp"
+        android:layout_marginRight="@dimen/_55sdp"
+        android:text="Share to class"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

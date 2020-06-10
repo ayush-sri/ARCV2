@@ -8,31 +8,78 @@
     tools:context=".activity_register">
 
     <TextView
-        android:id="@+id/back_indicator"
-        android:layout_width="wrap_content"
+        android:id="@+id/number"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/home"
+       android:textAlignment="center"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:text="+91 8299735144"
         android:textColor="#fff"
-        android:layout_marginTop="2dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="80sp"/>
-<TextView
-    android:id="@+id/sign_up"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Sign Up"
-    android:transitionName="sign_in_to_up"
-    android:textColor="#fff"
-    android:textAlignment="center"
-    android:layout_marginTop="40dp"
-    android:textSize="35sp"/>
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/stu"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/sign_up"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="105dp"
-        android:background="@drawable/button_google" />
+    <TextView
+        android:id="@+id/set_up_account_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Let's set up your account"
+        android:textColor="#fff"
+        android:textSize="@dimen/_23ssp" />
+
+    <TextView
+        android:id="@+id/choose_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/_75sdp"
+        android:text="Choose your account type"
+        android:layout_below="@+id/number"
+        android:textColor="#000"
+        android:textSize="@dimen/_18ssp"/>
+    <TextView
+        android:id="@+id/student"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/choose_text"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/stud_active" />
+
+    <TextView
+        android:id="@+id/faculty"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_toRightOf="@+id/student"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_below="@+id/choose_text"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/teach_deactive"/>
+
+    <TextView
+        android:id="@+id/account_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/student"
+        android:text="Student"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textSize="@dimen/_20ssp" />
+
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_below="@+id/account_type"
+        android:layout_marginEnd="@dimen/_70sdp"
+        android:background="@drawable/button_bg"
+        android:text="done"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_15ssp" />
+
 </RelativeLayout>

@@ -1,1 +1,5 @@
 include ':app'
+include ':java'
+include ':openCV'
+include ':openCV4'
+include ':openCV2410'

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/frag_branch"
+    android:background="#fff"
+    android:clickable="true">
+    <TextView
+        android:id="@+id/choose_branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Subjects"
+        android:layout_margin="@dimen/_15sdp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_22ssp"/>
+
+    <TextView
+        android:id="@+id/add_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_toRightOf="@+id/choose_branch"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_15ssp"
+        android:textAlignment="viewEnd"
+        android:textColor="#1976D2"
+        android:textSize="@dimen/_14ssp"/>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/sub_recycler"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_below="@+id/choose_branch"
+    android:layoutAnimation="@anim/layout_animation_fall_down"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:background="@color/status_bar_color"
+        android:textColor="#fff"
+        android:textSize="@dimen/_17ssp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

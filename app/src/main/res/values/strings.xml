@@ -8,10 +8,17 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
+    <string name="attendance">Attendance</string>
+    <string name="discusstions">Discussions</string>
+    <string name="assignments">Assignments</string>
+    <string name="notes">Notes</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="home">&lt;</string>
+    <string name="faculty">Faculty</string>
+    <string name="student">Student</string>
+    <string name="title_activity_main_student">main_student</string>
+    <string name="logout">Logout</string>
+    <string name="default_attendance">Attendance not marked for today kindly approach faculty for furthur instructions</string>
+    <string name="take_attendance">Take Attendance</string>
 </resources>

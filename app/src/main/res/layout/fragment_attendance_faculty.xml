@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/attendance_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/circularProgressbar_lecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/circularProgressbar"
+                android:layout_centerInParent="true"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="70"
+                android:secondaryProgress="100"
+                android:progressDrawable="@drawable/progress_"/>
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:background="@drawable/whitecircle"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp">
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="100"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="@dimen/_18ssp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BCS 7002"
+                android:textSize="@dimen/_18ssp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Digital Image Processing"
+                android:textSize="@dimen/_14ssp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/attendance_status"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:background="@drawable/rel_bg_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/take_attendance"
+            android:padding="@dimen/_24sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>
